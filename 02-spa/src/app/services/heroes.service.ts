@@ -73,4 +73,9 @@ export class HeroesService
       return this.heroes;
   }
 
+  getHeroe(id:number):heroes
+  {
+    return this.heroes[id];
+  }
+
 }

@@ -1,1 +1,19 @@
-<p>heroe works!</p>
+<h1>{{heroe.nombre}}<small class="pl-3">{{heroe.aparicion}}</small></h1>
+<div class="row">
+  <div class="col-md-4">
+    <img src="{{heroe.img}}">
+    <br/><br/>
+    <a  [routerLink]="['/heroes']"  class="btn btn-outline-danger btn-block" >Volver</a>
+  </div>
+  <div class="col-md-8">
+    <h3>{{heroe.nombre}}</h3>
+    <hr/>
+    <p>
+      {{heroe.bio}}
+    </p>
+    <div class="d-flex justify-content-center">
+      <img class="img-fluid w-50 " src="assets/img/{{heroe.casa}}.png">
+    </div>
+  </div>
+</div>
+
