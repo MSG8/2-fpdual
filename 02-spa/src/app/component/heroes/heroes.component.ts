@@ -8,6 +8,7 @@ import {Router} from "@angular/router";
   styleUrls: ['./heroes.component.css']
 })
 export class HeroesComponent implements OnInit {
+  LONGITUD_TEXTO: number = 350;
 
   private _heroes: heroes[];
 
@@ -27,4 +28,14 @@ export class HeroesComponent implements OnInit {
   {
     this.router.navigate(['/heroe', id]);
   }
+
+  puntosSuspensivos(id:number):string
+  {
+     if (this.heroes[id].bio.length > this.LONGITUD_TEXTO){
+      return '...';
+     }
+     return '';
+    return "hola"
+  }
 }
+
