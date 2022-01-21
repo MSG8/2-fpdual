@@ -9,6 +9,7 @@ import { AboutComponent } from './component/about/about.component';
 import {HeroesService} from "./services/heroes.service";
 import { HeroeComponent } from './component/heroe/heroe.component';
 import { SidebarComponent } from './component/shared/sidebar/sidebar.component';
+import { BuscarComponent } from './component/buscar/buscar.component';
 
 
 @NgModule({
@@ -20,6 +21,7 @@ import { SidebarComponent } from './component/shared/sidebar/sidebar.component';
     AboutComponent,
     HeroeComponent,
     SidebarComponent,
+    BuscarComponent,
 
   ],
   imports: [
