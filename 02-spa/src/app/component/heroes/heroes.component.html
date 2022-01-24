@@ -1,15 +1,9 @@
 <h1 class="animated-fast">Héroes <small>Marvel y DC</small></h1>
 <hr />
 <div class="card-group">
-  <div class="card animated" *ngFor= "let heroe of heroes; let indice=index">
-    <img class="card-img-top" src="{{ heroe.img }}"  [alt]= "heroe.nombre">
-    <div class="card-body">
-      <h5 class="card-title">{{ heroe.nombre }}</h5>
-      <p class="card-text text-justify">{{ heroe.bio | slice:0:this.LONGITUD_TEXTO }}{{puntosSuspensivos(indice)}}</p>
-      <p class="card-text"><small class="text-muted">{{ heroe.aparicion | date:'y' }}</small></p>
-    </div>
-    <a [routerLink]="['/heroe', indice]" class="btn btn-outline-primary btn-block">a ver más..</a>
-    <button (click)= "verHeroe(indice)" class="btn btn-outline-primary btn-block">btn ver más..</button>
+  <div>
+    
+    <app-heroe-tarjeta (heroeSeleccionado)="verHeroe($event)"  [heroe]="heroe" [indice]="indice" *ngFor= "let heroe of heroes; let indice=index" ></app-heroe-tarjeta>
   </div>
-
+   
 </div>
