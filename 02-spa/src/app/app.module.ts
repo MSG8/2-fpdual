@@ -10,6 +10,7 @@ import {HeroesService} from "./services/heroes.service";
 import { HeroeComponent } from './component/heroe/heroe.component';
 import { SidebarComponent } from './component/shared/sidebar/sidebar.component';
 import { BuscarComponent } from './component/buscar/buscar.component';
+import { HeroeTarjetaComponent } from './component/heroe-tarjeta/heroe-tarjeta.component';
 
 
 @NgModule({
@@ -22,6 +23,7 @@ import { BuscarComponent } from './component/buscar/buscar.component';
     HeroeComponent,
     SidebarComponent,
     BuscarComponent,
+    HeroeTarjetaComponent,
 
   ],
   imports: [
