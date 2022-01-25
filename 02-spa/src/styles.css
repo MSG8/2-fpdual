@@ -36,4 +36,18 @@
   width: 25px;
 }
 
+.card-group
+{
+  justify-content: center;
+}
+
+@media (min-width: 576px)
+{
+  .card-group>.card {
+    flex: 0 1 auto;
+    /*flex: 1 0 0%;*/
+    margin-bottom: 0;
+    width: 400px;
+  }
+}
 
