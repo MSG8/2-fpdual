@@ -1,9 +1,5 @@
 <h1 class="animated-fast">Héroes <small>Marvel y DC</small></h1>
 <hr />
 <div class="card-group">
-  <div>
-    <!-- (heroeSeleccionado)="verHeroe($event)" -->
-    <app-heroe-tarjeta  [heroe]="heroe" *ngFor= "let heroe of heroesEncontrados;" ></app-heroe-tarjeta>
-  </div>
-   
+    <app-heroe-tarjeta class="card animated" [heroe]="heroe"*ngFor= "let heroe of heroesEncontrados" ></app-heroe-tarjeta>
 </div>
